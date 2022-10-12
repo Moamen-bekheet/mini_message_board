@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  each message in messagesArr
+    .message(style="margin-bottom: 1rem")
+      p #{message.user}: #{message.text}
+      p #{message.added}
+  
+  form(action="/new", method="get")
+    button add new message
+

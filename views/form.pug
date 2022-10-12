@@ -1,0 +1,9 @@
+h1 fill out the form below to send you message 
+form(action='/new' method='POST')
+    .username
+        label(for='user') username
+        input(type=text id="user" name='user')
+    .message
+        label(for='message') message
+        textarea(id='message' name='text')
+    button submit message
